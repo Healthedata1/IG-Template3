@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2019-10-30T17:56:53-07:00",
+  "date": "2019-11-04T09:31:08-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -34,7 +34,7 @@
   "packageId": "healthedatainc.ig-template2",
   "license": "CC0-1.0",
   "fhirVersion": [
-    "4.0.0"
+    "4.0.1"
   ],
   "definition": {
     "grouping": [

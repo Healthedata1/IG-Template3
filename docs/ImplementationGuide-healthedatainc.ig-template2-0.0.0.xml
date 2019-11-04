@@ -10,7 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-10-30T17:56:53-07:00"/>
+  <date value="2019-11-04T09:31:08-08:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   <copyright value="Used by permission of Health eData Inc, all rights reserved Creative Commons License"/>
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
-  <fhirVersion value="4.0.0"/>
+  <fhirVersion value="4.0.1"/>
   <definition>
     <grouping>
       <name value="base"/>
