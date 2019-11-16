@@ -109,11 +109,11 @@
     <!-- ============ Security Page =============== -->
     <page><nameUrl value="security.html"/><title value="Security"/><generation value="markdown"/></page>
 
-    <!-- ============ Downloads Page =============== -->
-    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
-
     <!-- ============ Examples Page=============== -->
     <page><nameUrl value="all-examples.html"/><title value="All Examples"/><generation value="markdown"/></page>
+
+    <!-- ============ Downloads Page =============== -->
+    <page><nameUrl value="downloads.html"/><title value="Downloads"/><generation value="markdown"/></page>
 
     <!-- ============ Table of Contents =============== -->
     <page><nameUrl value="toc.html"/><title value="Table of Contents"/><generation value="html"/></page>

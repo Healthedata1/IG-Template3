@@ -255,7 +255,7 @@ can only resize using html  or css ;-(
 <!-- ============StatusBox=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -289,7 +289,7 @@ This is the {% if {{site.build}} == "ci" %}
 
 <h3 class="self-link" id="introduction">Introduction</h3>
 
-<p>This is based on http://build.fhir.org/index.html</p>
+<p>This is based on http://build.fhir.org/index.html-</p>
 
 <p>
   <button class="btn btn-info btn-lg btn-block" type="button" title="Click to Open or Close Example" data-toggle="collapse" data-target="#example" aria-expanded="false" aria-controls="collapseExample">
@@ -298,7 +298,11 @@ This is the {% if {{site.build}} == "ci" %}
 </p>
 
 <div class="collapse" id="example">
-  <div class="card card-body">
+  <div class="card card-body" id="card-body">
+    add copy here...
+       <!-- ***todo get copy button to behave inside tab ******* -->
+         <button id="copy-button" class="btn-default btn-sm" data-clipboard-target="card-body">Copy</button>
+
       <h2 id="foo">foo</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>example for button bar
 example for button bar
@@ -338,7 +342,14 @@ example for button bar
 </div>
 <p><br /></p>
 
-<p>blah blah blah</p>
+<div id="blah">
+blah blah blah
+</div>
+
+<!-- ******** TODO testing copy button for grabbing sample data ******
+<button id="copy-button" class="btn-default btn-sm" data-clipboard-target="blah">Copy Blah</button>
+********************************
+-->
 
 <h3 id="more-stuff">More Stuff</h3>
 
@@ -381,7 +392,7 @@ example for button bar
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 4, 2019 09:31-0800">2019-11-04</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Nov 16, 2019 13:05-0800">2019-11-16</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

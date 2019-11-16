@@ -10,7 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-11-04T09:31:08-08:00"/>
+  <date value="2019-11-16T12:37:45-08:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -28,6 +28,16 @@
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="3.3.0"/>
+  </dependsOn>
+  <dependsOn>
+    <uri value="http://hl7.org/fhir/us/core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="3.1.0"/>
+  </dependsOn>
   <definition>
     <grouping>
       <name value="base"/>
@@ -328,13 +338,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>

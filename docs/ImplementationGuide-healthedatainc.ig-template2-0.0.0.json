@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2019-11-04T09:31:08-08:00",
+  "date": "2019-11-16T12:37:45-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -35,6 +35,18 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "http://hl7.org/fhir/us/qicore",
+      "packageId": "hl7.fhir.us.qicore",
+      "version": "3.3.0"
+    },
+    {
+      "uri": "http://hl7.org/fhir/us/core",
+      "packageId": "hl7.fhir.us.core",
+      "version": "3.1.0"
+    }
   ],
   "definition": {
     "grouping": [
@@ -414,13 +426,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
+          "nameUrl": "all-examples.html",
+          "title": "All Examples",
           "generation": "markdown"
         },
         {
-          "nameUrl": "all-examples.html",
-          "title": "All Examples",
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {

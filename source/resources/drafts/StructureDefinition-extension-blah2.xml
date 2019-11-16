@@ -8,7 +8,7 @@
   <status value="active"/>
   <date value="2017-02-15"/>
   <description value="an example of a simple extension."/>
-  <fhirVersion value="4.0.1"/>
+  <fhirVersion value="4.1.0"/>
   <mapping>
     <identity value="rim"/>
     <uri value="http://hl7.org/v3"/>

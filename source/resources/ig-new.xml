@@ -45,7 +45,7 @@
   <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
-    <version value="current"/>
+    <version value="3.1.0"/>
   </dependsOn>
   <definition>
     <grouping>
@@ -241,13 +241,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
+        <nameUrl value="all-examples.html"/>
+        <title value="All Examples"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="all-examples.html"/>
-        <title value="All Examples"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>

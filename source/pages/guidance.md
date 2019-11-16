@@ -15,14 +15,20 @@ f: http://build.fhir.org/
 ### Introduction
 {:.self-link}
 
-This is based on {{page.f}}index.html
-
+This is based on {{page.f}}index.html-
 
 {% include examplebutton.html example="example" b_title = "Example Button bar" %}
 
 
-
+<div id="blah">
 blah blah blah
+</div>
+
+<!-- ******** TODO testing copy button for grabbing sample data ******
+<button id="copy-button" class="btn-default btn-sm" data-clipboard-target="blah">Copy Blah</button>
+********************************
+-->
+
 
 ### More Stuff
 

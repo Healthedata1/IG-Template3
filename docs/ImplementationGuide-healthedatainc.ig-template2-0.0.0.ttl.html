@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -290,7 +290,7 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">fhir:ImplementationGuide.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;IGTest3&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">fhir:ImplementationGuide.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;IG Test3&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">fhir:ImplementationGuide.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2019-11-04T09:31:08-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2019-11-16T12:37:45-08:00&quot;^^xsd:dateTime];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">fhir:ImplementationGuide.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Health eData Inc&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">fhir:ImplementationGuide.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -311,6 +311,21 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.fhirVersion">fhir:ImplementationGuide.fhirVersion</a> [
      <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;4.0.1&quot;;
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0
+  ];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn">fhir:ImplementationGuide.dependsOn</a> [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">fhir:ImplementationGuide.dependsOn.uri</a> [
+       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/qicore&quot;;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/qicore&gt;     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">fhir:ImplementationGuide.dependsOn.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.us.qicore&quot; ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">fhir:ImplementationGuide.dependsOn.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;3.3.0&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">fhir:ImplementationGuide.dependsOn.uri</a> [
+       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/core&quot;;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core&gt;     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">fhir:ImplementationGuide.dependsOn.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.us.core&quot; ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">fhir:ImplementationGuide.dependsOn.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;3.1.0&quot; ]
   ];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">fhir:ImplementationGuide.definition</a> [
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">fhir:ImplementationGuide.definition.grouping</a> [
@@ -583,12 +598,12 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Security&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
-         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;downloads.html&quot; ];
-         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Downloads&quot; ];
-         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;all-examples.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;All Examples&quot; ];
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;downloads.html&quot; ];
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Downloads&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;toc.html&quot; ];
@@ -652,7 +667,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.0</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Nov 4, 2019 09:31-0800">2019-11-04</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Nov 16, 2019 13:05-0800">2019-11-16</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
