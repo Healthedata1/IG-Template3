@@ -15,9 +15,9 @@ showDefs: false  # 'true' if want to display Definitions tab'
 showExamples: false  # 'true' if want to display Examples tab -currently no template for it'
 showPsuedoJson: true # 'true' if want to display Psuedo JSON profile view'
 showPsuedoXML: true # 'true' if want to display Psuedo JSON profile view'
+showIntro:  # 'true' if want to display Custom Introduction in profile view'
 showQuickStart:  # 'true' if want to display QuickStarts in profile view'
 showDevView: # 'true' if only want to display summary view in profile view'
-showIntro:  # 'true' if want to display Custom Introduction in profile view'
 default_profile_view: 1  # choice of 0|1|2|3 for summary|differential|full|all views in profile
 example_types:  # for matching type to Type
 - Account
