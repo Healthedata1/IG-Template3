@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -283,7 +283,7 @@ This is the {% if {{site.build}} == "ci" %}
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a>" : "IGTest3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a>" : "IG Test3",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a>" : "draft",
-  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a>" : "2019-11-16T12:37:45-08:00",
+  "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a>" : "2019-12-10T04:55:51-08:00",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a>" : "Health eData Inc",
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>" : [
     {
@@ -311,14 +311,16 @@ This is the {% if {{site.build}} == "ci" %}
   ],
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn">dependsOn</a>" : [
     {
-      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">uri</a>" : "http://hl7.org/fhir/us/qicore",
-      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">packageId</a>" : "hl7.fhir.us.qicore",
-      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">version</a>" : "3.3.0"
-    },
-    {
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.id">id</a>" : "uscore",
       "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">uri</a>" : "http://hl7.org/fhir/us/core",
       "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">packageId</a>" : "hl7.fhir.us.core",
       "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">version</a>" : "3.1.0"
+    },
+    {
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.id">id</a>" : "qicore",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">uri</a>" : "http://hl7.org/fhir/us/qicore",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">packageId</a>" : "hl7.fhir.us.qicore",
+      "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">version</a>" : "current"
     }
   ],
   "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">definition</a>" : {
@@ -409,6 +411,22 @@ This is the {% if {{site.build}} == "ci" %}
         ],
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
           "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/extension-blah"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
+          },
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-test1-messageheader-profile.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/test1-messageheader-profile"
         },
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
       },
@@ -560,6 +578,22 @@ This is the {% if {{site.build}} == "ci" %}
         "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
           {
             "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "StructureDefinition:resource"
+          },
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueUri</a>" : "StructureDefinition-test2-messageheader-profile.html"
+          }
+        ],
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">reference</a>" : {
+          "<a href="http://build.fhir.org/references.html#Reference#Reference.reference">reference</a>" : "StructureDefinition/test2-messageheader-profile"
+        },
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">exampleBoolean</a>" : false
+      },
+      {
+        "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">extension</a>" : [
+          {
+            "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "<a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "ValueSet"
           },
           {
@@ -606,6 +640,11 @@ This is the {% if {{site.build}} == "ci" %}
           "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown",
           "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">page</a>" : [
             {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-test1-messageheader-profile.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Test1 MessageHeader Profile",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-ifr.html",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Ifr",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
@@ -621,6 +660,11 @@ This is the {% if {{site.build}} == "ci" %}
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
             },
             {
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-test2-messageheader-profile.html",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Test2 MessageHeader Profile",
+              "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
+            },
+            {
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "StructureDefinition-extension-complex.html",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "StructureDefinition Extension Complex",
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
@@ -631,6 +675,11 @@ This is the {% if {{site.build}} == "ci" %}
               "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "generated"
             }
           ]
+        },
+        {
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "bundles.html",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">title</a>" : "Bundle Definitions",
+          "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">generation</a>" : "markdown"
         },
         {
           "<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">nameUrl</a>" : "operations.html",
@@ -766,7 +815,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Nov 16, 2019 13:05-0800">2019-11-16</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Dec 10, 2019 05:31-0800">2019-12-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

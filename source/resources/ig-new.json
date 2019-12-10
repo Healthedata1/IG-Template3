@@ -88,6 +88,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/test1-messageheader-profile"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "OperationDefinition/opdef-test"
       },
       "exampleBoolean" : false
@@ -142,6 +148,12 @@
     },
     {
       "reference" : {
+        "reference" : "StructureDefinition/test2-messageheader-profile"
+      },
+      "exampleBoolean" : false
+    },
+    {
+      "reference" : {
         "reference" : "ValueSet/blah-codes"
       },
       "exampleBoolean" : false
@@ -160,6 +172,11 @@
         "title" : "Profiles and Extensions",
         "generation" : "markdown",
         "page" : [{
+          "nameUrl" : "StructureDefinition-test1-messageheader-profile.html",
+          "title" : "StructureDefinition Test1 MessageHeader Profile",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "StructureDefinition-ifr.html",
           "title" : "StructureDefinition Ifr",
           "generation" : "generated"
@@ -175,6 +192,11 @@
           "generation" : "generated"
         },
         {
+          "nameUrl" : "StructureDefinition-test2-messageheader-profile.html",
+          "title" : "StructureDefinition Test2 MessageHeader Profile",
+          "generation" : "generated"
+        },
+        {
           "nameUrl" : "StructureDefinition-extension-complex.html",
           "title" : "StructureDefinition Extension Complex",
           "generation" : "generated"
@@ -184,6 +206,11 @@
           "title" : "StructureDefinition Extension Blah",
           "generation" : "generated"
         }]
+      },
+      {
+        "nameUrl" : "bundles.html",
+        "title" : "Bundle Definitions",
+        "generation" : "markdown"
       },
       {
         "nameUrl" : "operations.html",

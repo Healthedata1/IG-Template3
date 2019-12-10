@@ -10,7 +10,7 @@
   <name value="IGTest3"/>
   <title value="IG Test3"/>
   <status value="draft"/>
-  <date value="2019-11-16T12:37:45-08:00"/>
+  <date value="2019-12-10T04:55:51-08:00"/>
   <publisher value="Health eData Inc"/>
   <contact>
     <telecom>
@@ -28,15 +28,15 @@
   <packageId value="healthedatainc.ig-template2"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
-  <dependsOn>
-    <uri value="http://hl7.org/fhir/us/qicore"/>
-    <packageId value="hl7.fhir.us.qicore"/>
-    <version value="3.3.0"/>
-  </dependsOn>
-  <dependsOn>
+  <dependsOn id="uscore">
     <uri value="http://hl7.org/fhir/us/core"/>
     <packageId value="hl7.fhir.us.core"/>
     <version value="3.1.0"/>
+  </dependsOn>
+  <dependsOn id="qicore">
+    <uri value="http://hl7.org/fhir/us/qicore"/>
+    <packageId value="hl7.fhir.us.qicore"/>
+    <version value="current"/>
   </dependsOn>
   <definition>
     <grouping>
@@ -102,6 +102,18 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/extension-blah"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-test1-messageheader-profile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/test1-messageheader-profile"/>
       </reference>
       <exampleBoolean value="false"/>
     </resource>
@@ -215,6 +227,18 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-test2-messageheader-profile.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/test2-messageheader-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -252,6 +276,11 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
+          <nameUrl value="StructureDefinition-test1-messageheader-profile.html"/>
+          <title value="StructureDefinition Test1 MessageHeader Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-ifr.html"/>
           <title value="StructureDefinition Ifr"/>
           <generation value="generated"/>
@@ -267,6 +296,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="StructureDefinition-test2-messageheader-profile.html"/>
+          <title value="StructureDefinition Test2 MessageHeader Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-extension-complex.html"/>
           <title value="StructureDefinition Extension Complex"/>
           <generation value="generated"/>
@@ -276,6 +310,11 @@
           <title value="StructureDefinition Extension Blah"/>
           <generation value="generated"/>
         </page>
+      </page>
+      <page>
+        <nameUrl value="bundles.html"/>
+        <title value="Bundle Definitions"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="operations.html"/>

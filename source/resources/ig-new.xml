@@ -83,6 +83,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/test1-messageheader-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="OperationDefinition/opdef-test"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -137,6 +143,12 @@
     </resource>
     <resource>
       <reference>
+        <reference value="StructureDefinition/test2-messageheader-profile"/>
+      </reference>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <reference>
         <reference value="ValueSet/blah-codes"/>
       </reference>
       <exampleBoolean value="false"/>
@@ -155,6 +167,11 @@
         <title value="Profiles and Extensions"/>
         <generation value="markdown"/>
         <page>
+          <nameUrl value="StructureDefinition-test1-messageheader-profile.html"/>
+          <title value="StructureDefinition Test1 MessageHeader Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-ifr.html"/>
           <title value="StructureDefinition Ifr"/>
           <generation value="generated"/>
@@ -170,6 +187,11 @@
           <generation value="generated"/>
         </page>
         <page>
+          <nameUrl value="StructureDefinition-test2-messageheader-profile.html"/>
+          <title value="StructureDefinition Test2 MessageHeader Profile"/>
+          <generation value="generated"/>
+        </page>
+        <page>
           <nameUrl value="StructureDefinition-extension-complex.html"/>
           <title value="StructureDefinition Extension Complex"/>
           <generation value="generated"/>
@@ -179,6 +201,11 @@
           <title value="StructureDefinition Extension Blah"/>
           <generation value="generated"/>
         </page>
+      </page>
+      <page>
+        <nameUrl value="bundles.html"/>
+        <title value="Bundle Definitions"/>
+        <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="operations.html"/>

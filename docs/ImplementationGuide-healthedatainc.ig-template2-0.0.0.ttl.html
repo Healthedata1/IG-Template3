@@ -204,7 +204,7 @@ can only resize using html  or css ;-(
 <!-- ============Publish box=============== -->
 
 
-<!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">IG Test3 - Local Development build (v0.0.0). See the <a href="http://www.fhir.org/guides/test3/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 <!-- 
 This is the {% if {{site.build}} == "ci" %}
     Continuous Integration Build
@@ -290,7 +290,7 @@ This is the {% if {{site.build}} == "ci" %}
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">fhir:ImplementationGuide.name</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;IGTest3&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">fhir:ImplementationGuide.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;IG Test3&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">fhir:ImplementationGuide.status</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;draft&quot;];
-  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2019-11-16T12:37:45-08:00&quot;^^xsd:dateTime];
+  <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">fhir:ImplementationGuide.date</a> [ <a href="http://build.fhir.org/datatypes.html#dateTime">fhir:value</a> &quot;2019-12-10T04:55:51-08:00&quot;^^xsd:dateTime];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">fhir:ImplementationGuide.publisher</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Health eData Inc&quot;];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">fhir:ImplementationGuide.contact</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
@@ -314,18 +314,20 @@ This is the {% if {{site.build}} == "ci" %}
   ];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn">fhir:ImplementationGuide.dependsOn</a> [
      <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
-     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">fhir:ImplementationGuide.dependsOn.uri</a> [
-       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/qicore&quot;;
-       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/qicore&gt;     ];
-     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">fhir:ImplementationGuide.dependsOn.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.us.qicore&quot; ];
-     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">fhir:ImplementationGuide.dependsOn.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;3.3.0&quot; ]
-  ], [
-     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;uscore&quot; ];
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">fhir:ImplementationGuide.dependsOn.uri</a> [
        <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/core&quot;;
        <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/core&gt;     ];
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">fhir:ImplementationGuide.dependsOn.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.us.core&quot; ];
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">fhir:ImplementationGuide.dependsOn.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;3.1.0&quot; ]
+  ], [
+     <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.id">fhir:Element.id</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;qicore&quot; ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.uri">fhir:ImplementationGuide.dependsOn.uri</a> [
+       <a href="http://build.fhir.org/datatypes.html#canonical">fhir:value</a> &quot;http://hl7.org/fhir/us/qicore&quot;;
+       <a href="http://build.fhir.org/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/us/qicore&gt;     ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.packageId">fhir:ImplementationGuide.dependsOn.packageId</a> [ <a href="http://build.fhir.org/datatypes.html#id">fhir:value</a> &quot;hl7.fhir.us.qicore&quot; ];
+     <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.dependsOn.version">fhir:ImplementationGuide.dependsOn.version</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;current&quot; ]
   ];
   <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition">fhir:ImplementationGuide.definition</a> [
      <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.grouping">fhir:ImplementationGuide.definition.grouping</a> [
@@ -394,6 +396,17 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition:resource&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;StructureDefinition-test1-messageheader-profile.html&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/test1-messageheader-profile&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;OperationDefinition&quot; ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
@@ -401,7 +414,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;OperationDefinition/opdef-test&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -412,7 +425,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/ifr&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -423,7 +436,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ValueSet/bar-codes&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -434,7 +447,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CapabilityStatement/server&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -445,7 +458,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CodeSystem/blah-codes&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -456,7 +469,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CapabilityStatement/client&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 11;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -467,7 +480,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/template-profile-on-profile&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 12;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -478,7 +491,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ValueSet/foo-codes&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 13;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -489,7 +502,18 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/template-basic&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 14;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition:resource&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/StructureDefinition/implementationguide-page&quot; ];
+         <a href="http://build.fhir.org/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueUri</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;StructureDefinition-test2-messageheader-profile.html&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
+         <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition/test2-messageheader-profile&quot; ]       ];
+       <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 16;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -500,7 +524,7 @@ This is the {% if {{site.build}} == "ci" %}
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.reference">fhir:ImplementationGuide.definition.resource.reference</a> [
          <a href="http://build.fhir.org/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;ValueSet/blah-codes&quot; ]       ];
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.example[x]">fhir:ImplementationGuide.definition.resource.exampleBoolean</a> [ <a href="http://build.fhir.org/datatypes.html#boolean">fhir:value</a> &quot;false&quot;^^xsd:boolean ]     ], [
-       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 15;
+       <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 17;
        <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.resource.extension">fhir:Element.extension</a> [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
          <a href="http://build.fhir.org/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://build.fhir.org/datatypes.html#uri">fhir:value</a> &quot;http://hl7.org/fhir/tools/StructureDefinition/resource-information&quot; ];
@@ -527,26 +551,38 @@ This is the {% if {{site.build}} == "ci" %}
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.page">fhir:ImplementationGuide.definition.page.page</a> [
            <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 0;
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-test1-messageheader-profile.html&quot; ];
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Test1 MessageHeader Profile&quot; ];
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-ifr.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Ifr&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
-           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 1;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-template-profile-on-profile.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Template Profile On Profile&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
-           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-template-basic.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Template Basic&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
-           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-test2-messageheader-profile.html&quot; ];
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Test2 MessageHeader Profile&quot; ];
+           <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-extension-complex.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Extension Complex&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ], [
-           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+           <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;StructureDefinition-extension-blah.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;StructureDefinition Extension Blah&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ]       ], [
          <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 2;
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;bundles.html&quot; ];
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Bundle Definitions&quot; ];
+         <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;operations.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Operations&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ];
@@ -555,7 +591,7 @@ This is the {% if {{site.build}} == "ci" %}
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;OperationDefinition-opdef-test.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;OperationDefinition Opdef Test&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 3;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;terminology.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Terminology&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ];
@@ -576,11 +612,11 @@ This is the {% if {{site.build}} == "ci" %}
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;CodeSystem-blah-codes.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CodeSystem Blah Codes&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 4;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;searchparameters.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Search Parameters&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 5;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;capstatements.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Capability Statements&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ];
@@ -593,19 +629,19 @@ This is the {% if {{site.build}} == "ci" %}
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;CapabilityStatement-client.html&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;CapabilityStatement Client&quot; ];
            <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;generated&quot; ]         ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 6;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;security.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Security&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 7;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;all-examples.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;All Examples&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 8;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;downloads.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Downloads&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;markdown&quot; ]       ], [
-         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 9;
+         <a href="http://build.fhir.org/rdf.html#index">fhir:index</a> 10;
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.name[x]">fhir:ImplementationGuide.definition.page.nameUrl</a> [ <a href="http://build.fhir.org/datatypes.html#url">fhir:value</a> &quot;toc.html&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.title">fhir:ImplementationGuide.definition.page.title</a> [ <a href="http://build.fhir.org/datatypes.html#string">fhir:value</a> &quot;Table of Contents&quot; ];
          <a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.definition.page.generation">fhir:ImplementationGuide.definition.page.generation</a> [ <a href="http://build.fhir.org/datatypes.html#code">fhir:value</a> &quot;html&quot; ]       ]     ]
@@ -667,7 +703,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sat, Nov 16, 2019 13:05-0800">2019-11-16</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Tue, Dec 10, 2019 05:31-0800">2019-12-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>

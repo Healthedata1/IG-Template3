@@ -10,7 +10,7 @@
   "name": "IGTest3",
   "title": "IG Test3",
   "status": "draft",
-  "date": "2019-11-16T12:37:45-08:00",
+  "date": "2019-12-10T04:55:51-08:00",
   "publisher": "Health eData Inc",
   "contact": [
     {
@@ -38,14 +38,16 @@
   ],
   "dependsOn": [
     {
-      "uri": "http://hl7.org/fhir/us/qicore",
-      "packageId": "hl7.fhir.us.qicore",
-      "version": "3.3.0"
-    },
-    {
+      "id": "uscore",
       "uri": "http://hl7.org/fhir/us/core",
       "packageId": "hl7.fhir.us.core",
       "version": "3.1.0"
+    },
+    {
+      "id": "qicore",
+      "uri": "http://hl7.org/fhir/us/qicore",
+      "packageId": "hl7.fhir.us.qicore",
+      "version": "current"
     }
   ],
   "definition": {
@@ -136,6 +138,22 @@
         ],
         "reference": {
           "reference": "StructureDefinition/extension-blah"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-test1-messageheader-profile.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/test1-messageheader-profile"
         },
         "exampleBoolean": false
       },
@@ -287,6 +305,22 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-test2-messageheader-profile.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/test2-messageheader-profile"
+        },
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
@@ -333,6 +367,11 @@
           "generation": "markdown",
           "page": [
             {
+              "nameUrl": "StructureDefinition-test1-messageheader-profile.html",
+              "title": "StructureDefinition Test1 MessageHeader Profile",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "StructureDefinition-ifr.html",
               "title": "StructureDefinition Ifr",
               "generation": "generated"
@@ -348,6 +387,11 @@
               "generation": "generated"
             },
             {
+              "nameUrl": "StructureDefinition-test2-messageheader-profile.html",
+              "title": "StructureDefinition Test2 MessageHeader Profile",
+              "generation": "generated"
+            },
+            {
               "nameUrl": "StructureDefinition-extension-complex.html",
               "title": "StructureDefinition Extension Complex",
               "generation": "generated"
@@ -358,6 +402,11 @@
               "generation": "generated"
             }
           ]
+        },
+        {
+          "nameUrl": "bundles.html",
+          "title": "Bundle Definitions",
+          "generation": "markdown"
         },
         {
           "nameUrl": "operations.html",

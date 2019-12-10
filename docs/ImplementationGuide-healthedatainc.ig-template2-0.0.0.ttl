@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "IGTest3"];
   fhir:ImplementationGuide.title [ fhir:value "IG Test3"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2019-11-16T12:37:45-08:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2019-12-10T04:55:51-08:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Health eData Inc"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -43,20 +43,22 @@
   ];
   fhir:ImplementationGuide.dependsOn [
      fhir:index 0;
-     fhir:ImplementationGuide.dependsOn.uri [
-       fhir:value "http://hl7.org/fhir/us/qicore";
-       fhir:link <http://hl7.org/fhir/us/qicore>
-     ];
-     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.qicore" ];
-     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.3.0" ]
-  ], [
-     fhir:index 1;
+     fhir:Element.id [ fhir:value "uscore" ];
      fhir:ImplementationGuide.dependsOn.uri [
        fhir:value "http://hl7.org/fhir/us/core";
        fhir:link <http://hl7.org/fhir/us/core>
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.core" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "qicore" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/us/qicore";
+       fhir:link <http://hl7.org/fhir/us/qicore>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.us.qicore" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:ImplementationGuide.definition.grouping [
@@ -152,6 +154,22 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-test1-messageheader-profile.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/test1-messageheader-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/test1-messageheader-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ], [
          fhir:index 1;
@@ -164,7 +182,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -180,7 +198,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -196,7 +214,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -212,7 +230,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -228,7 +246,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -244,7 +262,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -260,7 +278,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -276,7 +294,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -292,7 +310,23 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-test2-messageheader-profile.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://www.fhir.org/guides/test3/StructureDefinition/test2-messageheader-profile>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/test2-messageheader-profile" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -308,7 +342,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -341,32 +375,47 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
          fhir:ImplementationGuide.definition.page.page [
            fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-test1-messageheader-profile.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Test1 MessageHeader Profile" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 1;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-ifr.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Ifr" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 1;
+           fhir:index 2;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-profile-on-profile.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Profile On Profile" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 2;
+           fhir:index 3;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-template-basic.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Template Basic" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 3;
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-test2-messageheader-profile.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Test2 MessageHeader Profile" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
+         ], [
+           fhir:index 5;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-complex.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Complex" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ], [
-           fhir:index 4;
+           fhir:index 6;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "StructureDefinition-extension-blah.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "StructureDefinition Extension Blah" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
          fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "bundles.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Bundle Definitions" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "operations.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Operations" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
@@ -377,7 +426,7 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
-         fhir:index 3;
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
@@ -403,12 +452,12 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
-         fhir:index 4;
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "searchparameters.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Search Parameters" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 5;
+         fhir:index 6;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "capstatements.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Capability Statements" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ];
@@ -424,22 +473,22 @@
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "generated" ]
          ]
        ], [
-         fhir:index 6;
+         fhir:index 7;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Security" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7;
+         fhir:index 8;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "all-examples.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "All Examples" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8;
+         fhir:index 9;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9;
+         fhir:index 10;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
