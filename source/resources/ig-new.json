@@ -186,6 +186,11 @@
         }]
       },
       {
+        "nameUrl" : "bundles.html",
+        "title" : "Bundle Definitions",
+        "generation" : "markdown"
+      },
+      {
         "nameUrl" : "operations.html",
         "title" : "Operations",
         "generation" : "markdown",

@@ -1,7 +1,6 @@
 ---
 title: Home Page
 layout: default
-active: home
 ---
 
 <!-- TOC  the css styling for this is \pages\assets\css\project.css under 'markdown-toc'-->

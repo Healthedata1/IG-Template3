@@ -181,6 +181,11 @@
         </page>
       </page>
       <page>
+        <nameUrl value="bundles.html"/>
+        <title value="Bundle Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <nameUrl value="operations.html"/>
         <title value="Operations"/>
         <generation value="markdown"/>

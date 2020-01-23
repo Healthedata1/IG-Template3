@@ -28,6 +28,26 @@
  <packageId value="healthedatainc.ig-template2"/> <!-- 0..1 NPM Package name for IG -->
 <license value="CC0-1.0"/> <!--*****HARDCODED********* 0..1 SPDX license code for this IG (or not-open-source) -->
 <fhirVersion value="4.0.1"/> <!-- 0..1 FHIR Version this Implementation Guide targets -->
+ <!-- <dependsOn>   0..* Another Implementation guide this depends on
+  <uri> 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on </uri>
+  <packageId value="[id]"/> 0..1 NPM Package name for IG this depends on
+  <version value="[string]"/> 0..1 Version of the IG
+ </dependsOn> -->
+ <!-- insert dependency -->
+<dependsOn id="uscore">  <!-- 0..* Another Implementation guide this depends on -->
+  <uri value="http://hl7.org/fhir/us/core"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
+  <packageId value="hl7.fhir.us.core"/><!-- 0..1 NPM Package name for IG this depends on -->
+  <version value="3.1.0"/><!-- 0..1 Version of the IG -->
+ </dependsOn>
+<dependsOn id="qicore">  <!-- 0..* Another Implementation guide this depends on -->
+  <uri value="http://hl7.org/fhir/us/qicore"><!-- 1..1 canonical(ImplementationGuide) Identity of the IG that this depends on --></uri>
+  <packageId value="hl7.fhir.us.qicore"/><!-- 0..1 NPM Package name for IG this depends on -->
+  <version value="current"/><!-- 0..1 Version of the IG -->
+ </dependsOn>
+ <!-- <global>  0..* Profiles that apply globally
+  <type value="[code]"/> 1..1 Type this profile applies to
+  <profile> 1..1 canonical(StructureDefinition) Profile that all resources must conform to</profile>
+ </global> -->
  <definition>
   <!--  <grouping>  0..* Grouping used to present related resources in the IG -->
   <!-- <name value="[string]"/> 1..1 Descriptive name for the package -->
@@ -65,6 +85,20 @@
     <!-- ============ End Extensions and examples =============== -->
 
       </page>
+
+     <!-- ============ Bundle Definitions Page =============== -->
+     <page><nameUrl value="bundles.html"/><title value="Bundle Definitions"/><generation value="markdown"/>
+
+     <!-- ============ MessagedDefinitions  =============== -->
+     <!-- insert messagedefinitions -->
+     <!-- ============ End MessagedDefinitions  =============== -->
+
+      <!-- ============ GraphDefinitions  =============== -->
+      <!-- insert graphdefinitions -->
+      <!-- ============ EndGraphDefinitions  =============== -->
+
+     </page>
+
     <!-- ============ Operations Page =============== -->
     <page><nameUrl value="operations.html"/><title value="Operations"/><generation value="markdown"/>
 

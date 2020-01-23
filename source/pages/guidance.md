@@ -1,8 +1,6 @@
 ---
 title: General Guidance and Definitions
 layout: default
-active: guidance
-f: http://build.fhir.org/
 ---
 
 {:.no_toc}
