@@ -58,10 +58,12 @@ Formats: <a href="{{[type]}}-{{[id]}}.html">Narrative</a>, <a href="{{[type]}}-{
 <p>
 The official URL for this profile is:
 <div class="input-group">
-<input type="text" class="form-control input-monospace input-sm" data-autoselect="" value="https://github.com/Healthedata1/FSH-Tut.git" aria-label="copy this canonical url" readonly="" id="copy-input"/>
+<input type="text" class="form-control canonical input-sm" value="{{site.data.structuredefinitions.{{[id]}}.url}}" aria-label="copy this canonical url" id="copy-input" readonly/>
 <span class="input-group-btn">
-  <button value="https://github.com/Healthedata1/FSH-Tut.git" aria-label="Copy to clipboard" class="btn btn-sm btn-default" type="button"><span class="glyphicon glyphicon-copy" aria-hidden="true" id="copy-button">
-  </span></button>
+  <button id="copy-button" aria-label="Copy to clipboard" class="btn btn-sm copy-me" type="button" title="Copy to Clipboard" data-placement="top">
+    <span class="glyphicon glyphicon-copy" aria-hidden="true">
+    </span>
+  </button>
 </span>
 </div>
 

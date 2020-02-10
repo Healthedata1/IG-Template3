@@ -94,7 +94,7 @@ can only resize using html  or css ;-( -->
     <div class="container">    <!-- container -->
       <div class="row">    <!-- row -->
        <div class="inner-wrapper">   <!-- inner-wrapper -->
-         <div class="col-12"><a name="002c1e9d-50a2-45a1-a020-2007f3aa9d71">​</a>    <!-- col -->
+         <div class="col-12"><a name="00e13461-b1f6-4c13-baf4-61c5aa2326e2">​</a>    <!-- col -->
               <!-- content of page -->
 
 
@@ -5910,7 +5910,7 @@ value="markdown"/&gt;&lt;/page&gt;
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Sun, Feb 9, 2020 19:56-0800">2020-02-09</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Feb 10, 2020 00:46-0800">2020-02-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
@@ -5957,7 +5957,11 @@ value="markdown"/&gt;&lt;/page&gt;
     // to indicate whether the text was successfully copied.
     $('#copy-button').bind('click', function() {
       var input = document.querySelector('#copy-input');
-      input.setSelectionRange(0, input.value.length + 1);
+      //console.log(input);
+      console.log(input.value);
+      console.log(input.select());
+      //console.log(input.setSelectionRange(0, input.value.length + 1));
+      input.value
       try {
         var success = document.execCommand('copy');
         if (success) {

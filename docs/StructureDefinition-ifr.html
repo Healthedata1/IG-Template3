@@ -333,10 +333,12 @@ Formats: <a href="StructureDefinition-ifr.html">Narrative</a>, <a href="Structur
 <p>
 The official URL for this profile is:
 <div class="input-group">
-<input readonly="null" data-autoselect="null" id="copy-input" type="text" class="form-control input-monospace input-sm" value="https://github.com/Healthedata1/FSH-Tut.git" aria-label="copy this canonical url"/>
+<input readonly="null" id="copy-input" type="text" class="form-control canonical input-sm" value="http://www.fhir.org/guides/test3/StructureDefinition/ifr" aria-label="copy this canonical url"/>
 <span class="input-group-btn">
-  <button type="button" value="https://github.com/Healthedata1/FSH-Tut.git" class="btn btn-sm btn-default" aria-label="Copy to clipboard"><span aria-hidden="true" id="copy-button" class="glyphicon glyphicon-copy">
-  </span></button>
+  <button data-placement="top" id="copy-button" type="button" title="Copy to Clipboard" class="btn btn-sm copy-me" aria-label="Copy to clipboard">
+    <span aria-hidden="true" class="glyphicon glyphicon-copy">
+    </span>
+  </button>
 </span>
 </div>
 
@@ -450,7 +452,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     "<a href="StructureDefinition-ifr.html#Reference.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources" class="dict"><span style="text-decoration: underline">reference</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Literal reference, Relative, internal or absolute URL</span>
     "<a href="StructureDefinition-ifr.html#Reference.type" title="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
 
-The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="9c95518c-abd9-4627-9b3c-b0a6f7b0e742">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Type the reference refers to (e.g. "Patient")</a></span>
+The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="a8caceeb-8fef-4af0-b23e-1829eadfac7b">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Type the reference refers to (e.g. "Patient")</a></span>
     "<a href="StructureDefinition-ifr.html#Reference.display" title="Plain text narrative that identifies the resource in addition to the resource reference" class="dict"><span style="text-decoration: underline">display</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
   }
 
@@ -535,7 +537,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     "<a href="StructureDefinition-ifr.html#Reference.reference" title="A reference to a location at which the other resource is found. The reference may be a relative reference, in which case it is relative to the service base URL, or an absolute URL that resolves to the location where the resource is found. The reference may be version specific or not. If the reference is not to a FHIR RESTful server, then it should be assumed to be version specific. Internal fragment references (start with '#') refer to contained resources" class="dict"><span style="text-decoration: underline">reference</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Literal reference, Relative, internal or absolute URL</span>
     "<a href="StructureDefinition-ifr.html#Reference.type" title="The expected type of the target of the reference. If both Reference.type and Reference.reference are populated and Reference.reference is a FHIR URL, both SHALL be consistent.
 
-The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="2994848e-405e-4df1-9887-6bd28b43c992">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Type the reference refers to (e.g. "Patient")</a></span>
+The type is the Canonical URL of Resource Definition that is the type this reference refers to. References are URLs that are relative to http://hl7.org/fhir/StructureDefinition/ e.g. &quot;Patient&quot; is a reference to http://hl7.org/fhir/StructureDefinition/Patient. Absolute URLs are only allowed for logical models (and can only be used in references in logical models, not resources)" class="dict"><span style="text-decoration: underline">type</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="99753c6b-0cfa-4d31-b073-2110be543525">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Type the reference refers to (e.g. "Patient")</a></span>
     "<a href="StructureDefinition-ifr.html#Reference.display" title="Plain text narrative that identifies the resource in addition to the resource reference" class="dict"><span style="text-decoration: underline">display</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text alternative for the resource</span>
   }
 
@@ -622,7 +624,7 @@ $( '#tabs' ).tabs({
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Sun, Feb 9, 2020 19:56-0800">2020-02-09</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Feb 10, 2020 00:46-0800">2020-02-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
@@ -671,7 +673,11 @@ $( '#tabs' ).tabs({
     // to indicate whether the text was successfully copied.
     $('#copy-button').bind('click', function() {
       var input = document.querySelector('#copy-input');
-      input.setSelectionRange(0, input.value.length + 1);
+      //console.log(input);
+      console.log(input.value);
+      console.log(input.select());
+      //console.log(input.setSelectionRange(0, input.value.length + 1));
+      input.value
       try {
         var success = document.execCommand('copy');
         if (success) {
