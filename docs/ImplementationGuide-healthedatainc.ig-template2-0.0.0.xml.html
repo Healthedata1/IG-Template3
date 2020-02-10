@@ -286,7 +286,7 @@ This is the {% if {{site.build}} == "ci" %}
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.name">name</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IGTest3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.title">title</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;IG Test3&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.status">status</a> <a href="http://build.fhir.org/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2020-02-10T00:46:32-08:00&quot;/&gt;
+  &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.date">date</a> <a href="http://build.fhir.org/datatypes.html#dateTime">value</a>=&quot;2020-02-10T10:46:36-08:00&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.publisher">publisher</a> <a href="http://build.fhir.org/datatypes.html#string">value</a>=&quot;Health eData Inc&quot;/&gt;
   &lt;<a href="http://build.fhir.org/implementationguide.html#ImplementationGuide.contact">contact</a>&gt;
     &lt;<a href="http://build.fhir.org/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -719,7 +719,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Feb 10, 2020 00:46-0800">2020-02-10</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Mon, Feb 10, 2020 10:46-0800">2020-02-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
@@ -768,11 +768,7 @@ Formats: <a href="ImplementationGuide-healthedatainc.ig-template2-0.0.0.html">Na
     // to indicate whether the text was successfully copied.
     $('#copy-button').bind('click', function() {
       var input = document.querySelector('#copy-input');
-      //console.log(input);
-      console.log(input.value);
-      console.log(input.select());
-      //console.log(input.setSelectionRange(0, input.value.length + 1));
-      input.value
+      input.select()
       try {
         var success = document.execCommand('copy');
         if (success) {
