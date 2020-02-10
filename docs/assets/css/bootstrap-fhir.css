@@ -3097,6 +3097,7 @@ button.close {
   line-height: 1.4;
   opacity: 0;
   filter: alpha(opacity=0);
+  pointer-events: none;
 }
 .tooltip.in {
   opacity: 1;

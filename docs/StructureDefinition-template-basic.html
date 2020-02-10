@@ -329,10 +329,26 @@ Formats: <a href="StructureDefinition-template-basic.html">Narrative</a>, <a hre
 <a href="http://build.fhir.org/profiling.html#representation">Description of Profiles, Differentials, and Snapshots</a>.
 </p>
 
+<form>
 <p>
 The official URL for this profile is:
-<code>http://www.fhir.org/guides/test3/StructureDefinition/template-basic</code><button data-clipboard-text="http://www.fhir.org/guides/test3/StructureDefinition/template-basic" id="copy-button" class="btn-default btn-sm">Copy</button>
+<div class="input-group">
+<input readonly="null" id="copy-input" type="text" class="form-control canonical input-sm" value="http://www.fhir.org/guides/test3/StructureDefinition/template-basic" aria-label="copy this canonical url"/>
+<span class="input-group-btn">
+  <button data-placement="top" id="copy-button" type="button" title="Copy to Clipboard" class="btn btn-sm copy-me" aria-label="Copy to clipboard">
+    <span aria-hidden="true" class="glyphicon glyphicon-copy">
+    </span>
+  </button>
+</span>
+</div>
+
 </p>
+</form>
+  <!-- <code class="border border-primary">http://www.fhir.org/guides/test3/StructureDefinition/template-basic</code>
+<button type="button" id="copy-button" class="btn-default btn-sm" data-clipboard-text="http://www.fhir.org/guides/test3/StructureDefinition/template-basic">
+<span class="glyphicon glyphicon-copy"></span>
+  </button>
+</p> -->
 
 <p>
 Published on Wed Feb 15 00:00:00 PST 2017 as active by the Health eData Inc.
@@ -462,20 +478,20 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
       <!-- ***todo get copy button to behave inside tab *******
        <button id="copy-button" class="btn-default btn-sm" data-clipboard-target="#json-inner">Copy</button> -->
    <div id="json-inner">
-     <pre class="spec"><a name="a41d1339-14b8-4a5d-8abe-adb27e0fba92">​</a>
+     <pre class="spec"><a name="6c204bca-8bd9-44b5-bb70-4136d9c0332e">​</a>
        // <span style="color: navy; opacity: 0.8">Health eData Template Profile</span>
  {
    "resourceType" : "Basic",
     "<a href="StructureDefinition-template-basic.html#Basic.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
     "<a href="StructureDefinition-template-basic.html#Basic.meta" title="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource" class="dict"><span style="text-decoration: underline">meta</span></a>" : {<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Meta">Meta</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Metadata about the resource</span>
     "<a href="StructureDefinition-template-basic.html#Basic.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">implicitRules</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A set of rules under which this content was created</span>
-    "<a href="StructureDefinition-template-basic.html#Basic.language" title="The base language in which the resource is written" class="dict"><span style="text-decoration: underline">language</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="7cb2b987-ea4b-4fda-b9b3-c24ba0ac78b9">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Language of the resource content</a></span>
+    "<a href="StructureDefinition-template-basic.html#Basic.language" title="The base language in which the resource is written" class="dict"><span style="text-decoration: underline">language</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="695b2f9a-f52d-4498-8c66-b29c66b3d548">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Language of the resource content</a></span>
     "<a href="StructureDefinition-template-basic.html#Basic.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety" class="dict"><span style="text-decoration: underline">text</span></a>" : {<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Narrative">Narrative</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text summary of the resource, for human interpretation</span>
     "<a href="StructureDefinition-template-basic.html#Basic.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope" class="dict"><span style="text-decoration: underline">contained</span></a>" : [{<span style="color: darkgreen"><a href="http://build.fhir.org/resource.html#Resource">Resource</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Contained, inline Resources</span>
     "extension": [
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Example extension</span>
         "url": "<a href="StructureDefinition-extension-blah.html">http://www.fhir.org/guides/test3/StructureDefinition/extension-blah</a>",
-        "<a href="StructureDefinition-template-basic.html#Basic.extension.valueCode" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="e17f0ea4-8a1b-4cc7-8b34-795c7fcf7f65">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Value of extension</a></span>
+        "<a href="StructureDefinition-template-basic.html#Basic.extension.valueCode" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="01f05bb2-04f9-45ac-b54a-ee386a4d87b4">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Value of extension</a></span>
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Example complex extension</span>
         "url": "<a href="StructureDefinition-extension-complex.html">http://www.fhir.org/guides/test3/StructureDefinition/extension-complex</a>",
@@ -483,7 +499,7 @@ Not handled yet: complex extension http://www.fhir.org/guides/test3/StructureDef
       }
     ],
     "<a href="StructureDefinition-template-basic.html#Basic.identifier" title="Identifier assigned to the resource for business purposes, outside the context of FHIR (this element must be supported)" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">Business identifier</span>
-    "<a href="StructureDefinition-template-basic.html#Basic.code" title="Identifies the 'type' of resource - equivalent to the resource name for other resources (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">code</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a name="f7dcb400-73a9-407d-8f96-7e1ff41f57bf">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Kind of Resource</a></span>
+    "<a href="StructureDefinition-template-basic.html#Basic.code" title="Identifies the 'type' of resource - equivalent to the resource name for other resources (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">code</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a name="db9eef1a-811d-44a4-9311-1dc7fca1ff8b">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Kind of Resource</a></span>
       "extension": [
       ],
       "<a href="StructureDefinition-template-basic.html#Basic.code.coding" title="A reference to a code defined by a terminology system (this element must be supported)" class="dict"><span style="text-decoration: underline">coding</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">Code defined by a terminology system</span>
@@ -609,20 +625,20 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
         <div id="all-json">
          <p><b>JSON Template</b></p>
          <div id="all-json-inner">
-      <pre class="spec"><a name="ff977d34-ae84-488f-9ea4-e17c71444aab">​</a>
+      <pre class="spec"><a name="1dd8715d-c10b-4818-8c7a-4a4098a67de7">​</a>
        // <span style="color: navy; opacity: 0.8">Health eData Template Profile</span>
  {
    "resourceType" : "Basic",
     "<a href="StructureDefinition-template-basic.html#Basic.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
     "<a href="StructureDefinition-template-basic.html#Basic.meta" title="The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource" class="dict"><span style="text-decoration: underline">meta</span></a>" : {<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Meta">Meta</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Metadata about the resource</span>
     "<a href="StructureDefinition-template-basic.html#Basic.implicitRules" title="A reference to a set of rules that were followed when the resource was constructed, and which must be understood when processing the content. Often, this is a reference to an implementation guide that defines the special rules along with other profiles etc (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">implicitRules</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#uri">uri</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A set of rules under which this content was created</span>
-    "<a href="StructureDefinition-template-basic.html#Basic.language" title="The base language in which the resource is written" class="dict"><span style="text-decoration: underline">language</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="ebb04310-4ce2-41a5-8c16-0936d7363dd8">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Language of the resource content</a></span>
+    "<a href="StructureDefinition-template-basic.html#Basic.language" title="The base language in which the resource is written" class="dict"><span style="text-decoration: underline">language</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="f9755445-9b60-43a6-ade2-24b1b621b4be">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Language of the resource content</a></span>
     "<a href="StructureDefinition-template-basic.html#Basic.text" title="A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is required to contain sufficient detail to make it &quot;clinically safe&quot; for a human to just read the narrative. Resource definitions may define what content should be represented in the narrative to ensure clinical safety" class="dict"><span style="text-decoration: underline">text</span></a>" : {<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Narrative">Narrative</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text summary of the resource, for human interpretation</span>
     "<a href="StructureDefinition-template-basic.html#Basic.contained" title="These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope" class="dict"><span style="text-decoration: underline">contained</span></a>" : [{<span style="color: darkgreen"><a href="http://build.fhir.org/resource.html#Resource">Resource</a></span>}], <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Contained, inline Resources</span>
     "extension": [
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Example extension</span>
         "url": "<a href="StructureDefinition-extension-blah.html">http://www.fhir.org/guides/test3/StructureDefinition/extension-blah</a>",
-        "<a href="StructureDefinition-template-basic.html#Basic.extension.valueCode" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="cdbf5255-3d2c-47d6-b255-aee660645484">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Value of extension</a></span>
+        "<a href="StructureDefinition-template-basic.html#Basic.extension.valueCode" title="Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://build.fhir.org/extensibility.html) for a list)" class="dict"><span style="text-decoration: underline">valueCode</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#code">code</a></span>&gt;" <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a name="0a9e88b7-f6ab-4814-bad4-42940a80baae">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Value of extension</a></span>
       },
       { // <span style="color: navy; opacity: 0.8"> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children; ext-1: Must have either extensions or value[x], not both"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span> Example complex extension</span>
         "url": "<a href="StructureDefinition-extension-complex.html">http://www.fhir.org/guides/test3/StructureDefinition/extension-complex</a>",
@@ -630,7 +646,7 @@ Not handled yet: complex extension http://www.fhir.org/guides/test3/StructureDef
       }
     ],
     "<a href="StructureDefinition-template-basic.html#Basic.identifier" title="Identifier assigned to the resource for business purposes, outside the context of FHIR (this element must be supported)" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://build.fhir.org/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">Business identifier</span>
-    "<a href="StructureDefinition-template-basic.html#Basic.code" title="Identifies the 'type' of resource - equivalent to the resource name for other resources (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">code</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a name="ad024688-755a-4dca-b4dd-3aa633b8e22b">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Kind of Resource</a></span>
+    "<a href="StructureDefinition-template-basic.html#Basic.code" title="Identifies the 'type' of resource - equivalent to the resource name for other resources (this element modifies the meaning of other elements)" class="dict"><span style="text-decoration: underline">code</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8"><a name="281ba302-7935-4f82-8587-874400cdb886">​</a><a style="color: navy" href="http://build.fhir.org/null.html">Kind of Resource</a></span>
       "extension": [
       ],
       "<a href="StructureDefinition-template-basic.html#Basic.code.coding" title="A reference to a code defined by a terminology system (this element must be supported)" class="dict"><span style="text-decoration: underline">coding</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">Code defined by a terminology system</span>
@@ -732,7 +748,7 @@ $( '#tabs' ).tabs({
   <div class="container">    <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Wed, Jan 22, 2020 20:09-0800">2020-01-22</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span data-toggle="tooltip" data-placement="top" href="#" title="Mon, Feb 10, 2020 00:46-0800">2020-02-10</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
@@ -772,35 +788,40 @@ $( '#tabs' ).tabs({
 <script>
   // Tooltip
 
-  $('#copy-button').tooltip({
-    trigger: 'click',
-    placement: 'bottom'
-  });
+  $(document).ready(function() {
+    // Initialize the tooltip.
+    $('#copy-button').tooltip();
 
-  function setTooltip(message) {
-    $('#copy-button').tooltip('hide')
-      .attr('data-original-title', message)
-      .tooltip('show');
-  }
+    // When the copy button is clicked, select the value of the text box, attempt
+    // to execute the copy command, and trigger event to update tooltip message
+    // to indicate whether the text was successfully copied.
+    $('#copy-button').bind('click', function() {
+      var input = document.querySelector('#copy-input');
+      //console.log(input);
+      console.log(input.value);
+      console.log(input.select());
+      //console.log(input.setSelectionRange(0, input.value.length + 1));
+      input.value
+      try {
+        var success = document.execCommand('copy');
+        if (success) {
+          $('#copy-button').trigger('copied', ['Copied!']);
+        } else {
+          $('#copy-button').trigger('copied', ['Copy with Ctrl-c']);
+        }
+      } catch (err) {
+        $('#copy-button').trigger('copied', ['Copy with Ctrl-c']);
+      }
+    });
 
-  function hideTooltip() {
-    setTimeout(function() {
-      $('#copy-button').tooltip('hide');
-    }, 1000);
-  }
-
-  // Clipboard
-
-  var clipboard = new ClipboardJS('#copy-button');
-
-  clipboard.on('success', function(e) {
-    setTooltip('Copied!');
-    hideTooltip();
-  });
-
-  clipboard.on('error', function(e) {
-    setTooltip('Failed!');
-    hideTooltip();
+    // Handler for updating the tooltip message.
+    $('#copy-button').bind('copied', function(event, message) {
+      $(this).attr('title', message)
+          .tooltip('fixTitle')
+          .tooltip('show')
+          .attr('title', "Copy to Clipboard")
+          .tooltip('fixTitle');
+    });
   });
 
 </script>
