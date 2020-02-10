@@ -365,7 +365,7 @@ Formats: <a href="CapabilityStatement-client.html">Narrative</a>, <a href="Capab
   <div class="container">  <!-- container -->
    <div class="inner-wrapper">
     <p>
-     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Wed, Jan 22, 2020 20:09-0800">2020-01-22</span>. <br/>
+     <a href="mailto:ehaas@healthedatainc.com">Health eData Inc </a> healthedatainc.ig-template2#0.0.0 based on <a style="color: #81BEF7" href="http://build.fhir.org/index.html">FHIR 4.0.1</a> created <span href="#" data-toggle="tooltip" data-placement="top" title="Sun, Feb 9, 2020 19:56-0800">2020-02-09</span>. <br/>
       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a>
       | <a style="color: #81BEF7" href="qa.html">QA Report</a>
       | <a style="color: #81BEF7" href="#">Version History</a>
@@ -405,35 +405,36 @@ Formats: <a href="CapabilityStatement-client.html">Narrative</a>, <a href="Capab
 <script>
   // Tooltip
 
-  $('#copy-button').tooltip({
-    trigger: 'click',
-    placement: 'bottom'
-  });
+  $(document).ready(function() {
+    // Initialize the tooltip.
+    $('#copy-button').tooltip();
 
-  function setTooltip(message) {
-    $('#copy-button').tooltip('hide')
-      .attr('data-original-title', message)
-      .tooltip('show');
-  }
+    // When the copy button is clicked, select the value of the text box, attempt
+    // to execute the copy command, and trigger event to update tooltip message
+    // to indicate whether the text was successfully copied.
+    $('#copy-button').bind('click', function() {
+      var input = document.querySelector('#copy-input');
+      input.setSelectionRange(0, input.value.length + 1);
+      try {
+        var success = document.execCommand('copy');
+        if (success) {
+          $('#copy-button').trigger('copied', ['Copied!']);
+        } else {
+          $('#copy-button').trigger('copied', ['Copy with Ctrl-c']);
+        }
+      } catch (err) {
+        $('#copy-button').trigger('copied', ['Copy with Ctrl-c']);
+      }
+    });
 
-  function hideTooltip() {
-    setTimeout(function() {
-      $('#copy-button').tooltip('hide');
-    }, 1000);
-  }
-
-  // Clipboard
-
-  var clipboard = new ClipboardJS('#copy-button');
-
-  clipboard.on('success', function(e) {
-    setTooltip('Copied!');
-    hideTooltip();
-  });
-
-  clipboard.on('error', function(e) {
-    setTooltip('Failed!');
-    hideTooltip();
+    // Handler for updating the tooltip message.
+    $('#copy-button').bind('copied', function(event, message) {
+      $(this).attr('title', message)
+          .tooltip('fixTitle')
+          .tooltip('show')
+          .attr('title', "Copy to Clipboard")
+          .tooltip('fixTitle');
+    });
   });
 
 </script>

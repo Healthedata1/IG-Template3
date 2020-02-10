@@ -619,3 +619,7 @@ a[href$=".sch"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".x
   color: red;
   font-weight: bold;}
 ~~~
+
+input.input-monospace {
+    font-family: monospace, serif;
+  }
